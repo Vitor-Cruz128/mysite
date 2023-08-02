@@ -1,0 +1,145 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div#interface {
+    width: 50% ; 
+    height: 85%;
+    position: absolute;
+    left: 4%; 
+    background-color: #ffffff;
+    margin: 5% auto 0% auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 1%;
+}
+img#logo {
+    position: absolute;
+    max-width:200px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+    top: -12%;
+}
+img#logo:hover{
+    width: 50%;
+}
+h2#nome {
+    position: absolute;
+    left: 52%;
+    top: 1%;
+    font-size: 500%;
+}
+h2#sobrenome {
+    position: absolute;
+    left: 65%;
+    top: 15%;
+    font-size: 500%;
+    transition: 3s;
+}
+h2#sobrenome:hover {
+    left: 52%;
+}
+aside#menu {
+    position: fixed;
+    right: 1%;
+    width: 32%;
+    height: 40%;
+    float: right;
+    background-color: #ffffff;
+    margin: 5% 6% 0% 0%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 2%;
+}
+article#prompt {
+    position: absolute;
+    width: 30% ;
+    height: 30%;
+    left: 62%;
+    top: 50%;
+    background-color: #121212;
+    margin: 5% 3% 0% 0%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+    opacity: 0.;
+}
+h1#titulo {
+    font: bold 15px arial, sans-serif;
+    font-weight: lighter;
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 17%;
+    padding: 2%;
+    background-color: #070707;
+    box-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
+img#icone{
+    width: 4%;
+    margin-left: 1%;
+}
+p#padrao {
+    font: normal 12px arial, sans-serif;
+    position: relative;
+    top: 20%;
+    padding: 1%;
+    color: #ffffff;
+}
+ul {
+    list-style: none;
+}
+li {
+    position: absolute;
+    display: inline;
+    margin: 6%;
+}
+li#sobre {
+    top: 10%;
+    right: 37%;
+}
+li#portifolio {
+    top: 45%;
+}
+li#contato {
+    right: 6%;
+    top: 45%;
+}
+iframe {
+    position: absolute;
+    top: 32%;
+    left: 2%;
+    padding: 4%;
+    width: 96%;
+    height: 65%;
+}
+.line {
+    font-family: 'Special Elite', monospace;
+    src: url(https://fonts.googleapis.com/css2?family=Special+Elite&display+swap);
+    border-right: 2px solid;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    color: white;
+    }
+    .typing-animation {
+        animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both; 
+    }
+    @keyframes typing { 
+        from {
+            width: 0;
+        }
+        to { 
+            width: 12em; 
+        }
+    }
+    @keyframes blinkCursor {
+        from{
+            border-right-color: rgba(255, 255, 255, 0.75);
+        }
+        to {
+            border-right-color: transparent;
+        }
+    }
